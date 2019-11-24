@@ -3,4 +3,25 @@
   <h2>
     Here you can query autos or add new ones.
   </h2>
+  <button id="getCars">List all cars</button>
+  <div class="formContainer">
+    <form id="addCarForm" action="http://localhost:8081/addCar" method="post">
+      name:<br />
+      <input type="text" name="name" /><br />
+      consumption:<br />
+      <input type="text" name="consumption" /><br />
+      color:<br />
+      <input type="text" name="color" /><br />
+      manufacturer:<br />
+      <input type="text" name="manufacturer" /><br />
+      year:<br />
+      <input type="text" name="year" /><br />
+      available:<br />
+      <input type="text" name="available" /><br />
+      horsepower:<br />
+      <input type="text" name="horsepower" /><br />
+      <input class="button" type="submit" value="Add new car" />
+    </form>
+  </div>
+  <table id="cars"></table>
 </html>

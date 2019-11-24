@@ -1,4 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <h2>Here you can search for manufacturers or add new ones.</h2>
+  <button id="getManufacturers">List all manufacturers</button>
+
+  <div class="formContainer">
+    <form
+      id="addManufacturerForm"
+      action="http://localhost:8081/addManufacturers"
+      method="post"
+    >
+      name:<br />
+      <input type="text" name="name" /><br />
+      country:<br />
+      <input type="text" name="country" /><br />
+      founded:<br />
+      <input type="text" name="founded" /><br />
+      <input class="button" type="submit" value="Add new manufacturer" />
+    </form>
+  </div>
+  <table id="manufacturers"></table>
+  <table id="carsByManufacturer"></table>
 </html>
